@@ -265,7 +265,7 @@ def visualize_list(parsed, options={}, page=False, minify=False):
 
 
 def visualize_simple_svg(text, arcs, options={}):
-    if len(options) == 0:
+    if not len(options) == 0:
         renderer = defualt_renderer
     else:
         renderer = DependencyVisualizer(options)

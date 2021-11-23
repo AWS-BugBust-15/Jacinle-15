@@ -105,7 +105,7 @@ def compose_bianry_tree_step_masks(tree, selection='first'):
         ordered_clean_nodes = [x for x in nodes if x in clean_nodes]
         clean_nodes_indices = {x: i for i, x in enumerate(ordered_clean_nodes)}
 
-        if selection is StepMaskSelectionMode.FIRST:
+#         if selection is StepMaskSelectionMode.FIRST:
             selected = nodes[min(allowed.values())]
         elif selection is StepMaskSelectionMode.RANDOM:
             selected = random.choice_list(list(allowed))
